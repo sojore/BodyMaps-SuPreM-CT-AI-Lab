@@ -1,0 +1,4 @@
+case,ct_shape,generated_organs,mean_dice,mean_iou,notes
+BDMAP_00000338,"(502, 348, 71)",9,0.9252,0.8639,"browser-triggered GPU inference; references available"
+BDMAP_00000015,"(502, 342, 33)",9,0.8930,0.8301,"browser-triggered GPU inference; references available"
+BDMAP_00000018,"(238, 178, 170)",9,0.8882,0.8172,"browser-triggered GPU inference; references available"
