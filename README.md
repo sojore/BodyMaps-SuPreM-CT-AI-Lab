@@ -53,6 +53,29 @@ These are **functional demonstration results**, not a held-out scientific benchm
 
 The machine-readable summary is in [`results/validation_summary.csv`](results/validation_summary.csv).
 
+## Demonstration screenshots
+
+The galleries below capture the actual browser workflow used for the three validation cases. Each combines the successful inference state with the corresponding visualization/error-analysis and evaluation output.
+
+### BDMAP_00000338 — full browser inference and prediction viewer
+
+![BDMAP_00000338 browser inference, three-plane predictions and metrics](screenshots/case_00000338_gallery.jpg)
+
+**Observed result:** 9 generated organ masks, mean Dice **0.9252**, mean IoU **0.8639**.
+
+### BDMAP_00000015 — inference, error analysis and metrics
+
+![BDMAP_00000015 browser inference, error analysis and metrics](screenshots/case_00000015_gallery.jpg)
+
+**Observed result:** 9 generated organ masks, mean Dice **0.8930**, mean IoU **0.8301**.
+
+### BDMAP_00000018 — inference, error analysis and metrics
+
+![BDMAP_00000018 browser inference, error analysis and metrics](screenshots/case_00000018_gallery.jpg)
+
+**Observed result:** 9 generated organ masks, mean Dice **0.8882**, mean IoU **0.8172**.
+
+
 ## Architecture
 
 ```text
@@ -98,6 +121,7 @@ Important: `SUPREM_PYTHON` must remain the virtual-environment interpreter path 
 - [`INFERENCE.md`](INFERENCE.md) — audited inference setup and provenance.
 - [`requirements.txt`](requirements.txt) — verified web/viewer dependencies.
 - [`results/validation_summary.csv`](results/validation_summary.csv) — three-case browser validation summary.
+- [`screenshots/`](screenshots/) — three case galleries documenting inference, visualization/error analysis and metrics.
 - [`.gitignore`](.gitignore) — prevents CT data, checkpoints and runtime logs from being committed.
 
 ## Security / deployment scope
