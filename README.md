@@ -97,6 +97,12 @@ audited SuPreM direct inference (GPU)
        +--> reference comparison / CSV
 ```
 
+## Reproduce the browser demo
+
+The verified Colab workflow is available at [`colab/BodyMaps_SuPreM_Final_Colab.ipynb`](colab/BodyMaps_SuPreM_Final_Colab.ipynb).
+
+It recreates the pinned SuPreM environment, verifies the checkpoint SHA-256, performs the strict name-based checkpoint audit, launches the reviewed Streamlit application, and exposes the temporary browser demo through a Cloudflare Quick Tunnel. Runtime outputs are intentionally cleared from the repository copy; the workflow was rerun successfully before publication.
+
 ## Reproducibility and checkpoint audit
 
 See [`INFERENCE.md`](INFERENCE.md) for the verified environment, checkpoint hash, strict name-based loading approach, browser subprocess path and demonstrated cases.
@@ -119,6 +125,7 @@ Important: `SUPREM_PYTHON` must remain the virtual-environment interpreter path 
 - [`app.py`](app.py) — Streamlit viewer, evaluation UI and inference trigger.
 - [`inference_backend.py`](inference_backend.py) — browser-to-SuPreM subprocess bridge and upload validation.
 - [`INFERENCE.md`](INFERENCE.md) — audited inference setup and provenance.
+- [`colab/BodyMaps_SuPreM_Final_Colab.ipynb`](colab/BodyMaps_SuPreM_Final_Colab.ipynb) — verified end-to-end Colab setup and browser-demo launcher.
 - [`requirements.txt`](requirements.txt) — verified web/viewer dependencies.
 - [`results/validation_summary.csv`](results/validation_summary.csv) — three-case browser validation summary.
 - [`screenshots/`](screenshots/) — three case galleries documenting inference, visualization/error analysis and metrics.
