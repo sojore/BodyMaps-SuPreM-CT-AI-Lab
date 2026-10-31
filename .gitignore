@@ -1,0 +1,25 @@
+# Medical imaging data
+*.nii
+*.nii.gz
+*.dcm
+*.zip
+
+# Model checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# Python and environments
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Runtime reports / logs
+bodymaps_reports/
+*.log
+
+# Streamlit/local system files
+.streamlit/secrets.toml
+.DS_Store
